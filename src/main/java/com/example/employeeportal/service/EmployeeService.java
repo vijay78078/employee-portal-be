@@ -18,7 +18,7 @@ public class EmployeeService {
     public void importEmployeeData(List<EmployeeModel> employees) {
         for (EmployeeModel employee : employees) {
             // Check if the employee already exists based on a unique field (e.g., system_id)
-            Optional<EmployeeModel> existingEmployee = employeeRepository.findBySystemId(employee.getSystemId());
+            Optional<EmployeeModel> existingEmployee = employeeRepository.findByEmailId(employee.getEmailId());
 
             if (existingEmployee.isPresent()) {
                 // If the employee exists, update the existing record
