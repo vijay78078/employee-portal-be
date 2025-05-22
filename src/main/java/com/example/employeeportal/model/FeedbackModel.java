@@ -30,6 +30,13 @@ public class FeedbackModel {
 
     @Column(name = "medium")
     private String medium;
+
+    @Column(name = "quarter")
+    private String quarter;
+
+    @Column(name = "year")
+    private String year;
+
     // --- Getters and Setters ---
 
     public Long getId() {
@@ -87,5 +94,21 @@ public class FeedbackModel {
 
     public void setMedium(String medium) {
         this.medium = medium;
+    }
+
+    public String getQuarter() {
+        return quarter;
+    }
+
+    public void setQuarter(String quarter) {
+        this.quarter = quarter;
+    }
+
+    public String getYear() {
+        return year;
+    }
+
+    public void setYear(String year) {
+        this.year = year;
     }
 }

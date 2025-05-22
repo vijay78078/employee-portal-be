@@ -9,7 +9,7 @@ import java.util.Optional;
 public interface EmployeeRepository extends JpaRepository<EmployeeModel, Long> {
 
     // Find an employee by their system ID (or any unique identifier)
-    Optional<EmployeeModel> findBySystemId(String systemId);
+    Optional<EmployeeModel> findByEmailId(String emailId);
 
 
 }
